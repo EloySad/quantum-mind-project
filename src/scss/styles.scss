@@ -1,0 +1,8 @@
+@import url('normalize.scss');
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Rock+Salt&display=swap');
+*{
+    font-family: "Rock Salt", cursive;
+}
