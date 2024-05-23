@@ -5,7 +5,6 @@ import * as bootstrap from 'bootstrap'
 
 import { users } from './data.js';
 import { index, edit, deleteUser } from './operations.js'
-import { showSmallAlertSuccess } from './alerts';
 
 const table = document.querySelector("table")
 const tbody = document.querySelector("tbody")
@@ -21,7 +20,6 @@ index(users, tbody)
 form.addEventListener('submit', function (event) {
     if (idParaEditar === undefined) {
         edit(name, lastName, email, users)
-        showSmallAlertSuccess("edited")
     } else {
         for (const user of users) {
             if (user.id == idParaEditar) {
@@ -31,7 +29,6 @@ form.addEventListener('submit', function (event) {
             }
         }
 
-        showSmallAlertSuccess("updated")
         idParaEditar = undefined
     }
 
@@ -44,7 +41,6 @@ table.addEventListener('click', function (event) {
     if (event.target.classList.contains("btn-danger")) {
         const idParaEliminar = event.target.getAttribute("data-id")
         deleteUser(users, idParaEliminar)
-        showSmallAlertSuccess("user deleted")
         index(users, tbody)
     }
 
