@@ -6,3 +6,17 @@
 *{
     font-family: "Rock Salt", cursive;
 }
+
+#bg-reg{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 100%;
+}
