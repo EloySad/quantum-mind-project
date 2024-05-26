@@ -25,12 +25,10 @@
 //Style of page game
 
 #bgames{
-    background: #00008B; /* Azul oscuro */
+    background: #00008B;
     background: linear-gradient(to bottom, #00008B 0%, #00007C 100%);
-    /* Prefijos para navegadores antiguos */
+    
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00008B), color-stop(100%, #00007C));
-    
-    
 }
 
 #Category{
@@ -45,21 +43,9 @@
     margin-top: 30px;
 }
 
-/* Estilo para el efecto hover en las tarjetas */
 .card:hover {
-    transform: scale(1.1); /* Escala la tarjeta al 110% del tamaño original */
-    transition: transform 0.3s ease; /* Agrega una transición suave */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra al hacer hover */
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    box-shadow: 0px 0px 10px rgba(231, 227, 227, 0.3);
 }
 
-
-
-
-// .video-container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 1200px;
-//     height: 675px;
-    
-// }
