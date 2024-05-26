@@ -1,18 +1,11 @@
 {
   "users": [
     {
-      "id": "c2a0",
-      "userName": "Eloy",
-      "lastName": "Sanchez",
-      "email": "eloy@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "13bb",
-      "userName": "Eloy",
-      "lastName": "Sane",
-      "email": "eliot@gmail.com",
-      "password": "1234"
+      "id": "ba2e",
+      "userName": "Renesme",
+      "lastName": "Collen",
+      "email": "nesme@gmail.com",
+      "password": "123456"
     }
   ]
 }

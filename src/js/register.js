@@ -18,7 +18,7 @@ form.addEventListener("submit", async (event) => {
     
     if (reviewEmail === true && reviewPassword === true) {
         await registerUser(userName, lastName, email, password)
-        window.location.href = "/"
+        window.location.href = "../auth/login.html"
     }
 })
 

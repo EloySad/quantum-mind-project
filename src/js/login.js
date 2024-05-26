@@ -2,7 +2,7 @@
     const userSesion = localStorage.getItem("userSesion")
 
     if (userSesion != null) {
-        window.location.href = "./src/pages/dashboard.html"
+        window.location.href = "../views/games.html"
     }
 })()
 
