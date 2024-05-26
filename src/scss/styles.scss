@@ -20,3 +20,32 @@
     flex: 0 0 auto;
     width: 100%;
 }
+
+
+//Style of page game
+
+#bgames{
+    background: #00008B;
+    background: linear-gradient(to bottom, #00008B 0%, #00007C 100%);
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00008B), color-stop(100%, #00007C));
+}
+
+#Category{
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.titleG{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(13, 10, 78);
+    margin-top: 30px;
+}
+
+.card:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    box-shadow: 0px 0px 10px rgba(231, 227, 227, 0.3);
+}
+
