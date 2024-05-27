@@ -68,10 +68,3 @@ async function registerUser(userName, lastName, email, password) {
         body: JSON.stringify(newUser)
     })
 }
-
-const btnLogout = document.getElementById("btn-logout")
-
-btnLogout.addEventListener("click", () => {
-    localStorage.removeItem("userSesion")
-    window.location.href = "/"
-})
