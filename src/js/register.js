@@ -1,3 +1,10 @@
+// Import our custom CSS
+import '../scss/auth.scss'
+import '../scss/styles.scss'
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
 const URL= "http://localhost:3000/users"
 // llamar al formulario
 
