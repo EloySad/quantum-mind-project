@@ -1,8 +1,14 @@
+// Import our custom CSS
+import '../scss/auth.scss'
+import '../scss/styles.scss'
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
 (function () {
     const userSesion = localStorage.getItem("userSesion")
 
     if (userSesion != null) {
-        window.location.href = "./src/pages/dashboard.html"
+        window.location.href = "../views/games.html"
     }
 })()
 
