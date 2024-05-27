@@ -10,7 +10,7 @@ const URL= "http://localhost:3000/users"
 
 const form = document.getElementById("register-form")
 
-// llamar a los campos de formularios
+// llamar a los campos de formulario
 
 const userName = document.getElementById("user-name")
 const lastName = document.getElementById("last-name")
