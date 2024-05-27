@@ -10,7 +10,7 @@ const URL= "http://localhost:3000/users"
 
 const form = document.getElementById("register-form")
 
-// llamar a los campos de formularios
+// llamar a los campos de formulario
 
 const userName = document.getElementById("user-name")
 const lastName = document.getElementById("last-name")
@@ -68,3 +68,10 @@ async function registerUser(userName, lastName, email, password) {
         body: JSON.stringify(newUser)
     })
 }
+
+const btnLogout = document.getElementById("btn-logout")
+
+btnLogout.addEventListener("click", () => {
+    localStorage.removeItem("userSesion")
+    window.location.href = "/"
+})
