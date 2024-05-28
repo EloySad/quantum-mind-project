@@ -11,6 +11,13 @@
 //     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01013a), color-stop(100%, #00002e));
 // }
 
+
+.containerCategory {//contendeor jeugos
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
 .textddd {
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
@@ -63,8 +70,8 @@
     text-align: center;
     font-size: 40px;
     color: rgb(255, 255, 255);
-    margin-top: 50px;
-    padding-top: 8%;
+    
+    padding-top: 7%;
 
 }
 
@@ -176,19 +183,30 @@
     justify-content: center;
     align-items: center;
     height: 500px;
-    margin-bottom: 60px;
+    
 }
 
-.s-divs {
+.d{//contenedor de juegos en vista de rama programacion
+
+    align-items: center;
+    background-color: rgb(29, 31, 33, 0.5);
+    height: 1150px;
+    width: 1200px;
+    padding: 20px;
+    border-radius: 30px; 
+    margin-top: -80px; 
+}
+
+.s-divs {//ventana con introduccion y rama dprogramcopm 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(29, 31, 33, 0.5);
-    height: 300px;
-    width: 1200px;
-    border-radius: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: rgb(29, 31, 33, 0.5); /* Color de fondo con opacidad */
+    height: 40%;
+    width: 1310px;
+    border-radius: 30px;   
+    padding: 30px;
+    
 }
 
 .s-div1 {
