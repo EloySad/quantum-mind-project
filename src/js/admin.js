@@ -1,4 +1,5 @@
 import '../scss/styles.scss'
+import '../scss/auth.scss'
 import * as bootstrap from 'bootstrap'
 const URL = "http://localhost:3000/users"
 

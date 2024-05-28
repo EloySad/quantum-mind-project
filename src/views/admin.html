@@ -10,42 +10,26 @@
 </head>
 
 <body class="bg-dark">
-    <header class="d-flex justify-content-evenly mt-4 ">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div class="container-fluid">
-                <img src="../../public/img/android-chrome-192x192.png" height="100" alt="">
-                <a class="navbar-brand" href="#">Admin</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
-
+    <header>
+        <a href="../views/games.html" class="enlace1"><img src="../../public/img/QM-LOGO-Photoroom (1).png" class="logo"/></a>
+      <nav class="barranavegacion">
+      </nav>
+      <nav>
+        <ul class="lista2">
+          
+          <li>
+            <button class="cssbuttons-iou"><a href="../auth/register.html"><span>Sign up</span
+            ></a></button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="container my-3 mt-5">
-        
+        <video autoplay muted loop id="bg-reg" src="../../public/vid/landing.mp4">
+        </video>
         <section>
             <main class="container my-3 d-flex flex-column">
-                <form action="./index.html" id="form" method="post" class="next-validation" novalidate>
+                <form action="./index.html" id="form" method="post" class="next-validation mt-5" novalidate>
 
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name(s)" required>
