@@ -386,11 +386,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 70px;
-}
-
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -463,11 +458,6 @@ figure {
 //FAQS
 
 .FAQS {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
   height: 500px;
   margin-bottom: 200px;
 }
@@ -647,8 +637,8 @@ form button {
 
 .new-button {
   border-radius: 150px;
-  padding: 15px;
-  width: 230px;
+  padding: 20px;
+  width: 200px;
 }
 .bi.bi-play {
   width: 40px; /* Cambia el ancho del SVG a 32 píxeles */
@@ -661,3 +651,81 @@ form button {
   width: 150px;
 }
 
+// test
+
+#personalityTest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+}
+#personalityForm h2 {
+  text-align: center;
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 50px;
+}
+
+#siguiente {
+  display: flex;
+  justify-content: center;
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+#questionContainer {
+  text-align: center;
+  font-size: 30px;
+}
+#optionsContainer {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una fila horizontal */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  text-align: center;
+}
+
+#optionsContainer label {
+  margin: 0 10px; /* Ajusta el margen entre cada opción */
+  font-size: 20px;
+}
+
+#optionsContainer input[type="radio"] {
+  margin-right: 10px; /* Ajusta el valor según sea necesario */
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 50px;
+}
+
+#botones {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-family: "Luckiest Guy", sans-serif;
+  margin-top: 70px;
+  gap: 50px;
+}
+#botones button {
+  font-size: 50px;
+  width: 300px;
+}
+
+.personality-description {
+  font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
