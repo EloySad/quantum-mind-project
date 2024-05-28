@@ -1,9 +1,16 @@
+// Import our custom CSS
+import '../scss/auth.scss'
+import '../scss/styles.scss'
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
 const URL= "http://localhost:3000/users"
 // llamar al formulario
 
 const form = document.getElementById("register-form")
 
-// llamar a los campos de formularios
+// llamar a los campos de formulario
 
 const userName = document.getElementById("user-name")
 const lastName = document.getElementById("last-name")
@@ -18,7 +25,7 @@ form.addEventListener("submit", async (event) => {
     
     if (reviewEmail === true && reviewPassword === true) {
         await registerUser(userName, lastName, email, password)
-        window.location.href = "/"
+        window.location.href = "../auth/login.html"
     }
 })
 
