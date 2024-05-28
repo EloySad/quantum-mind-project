@@ -9,12 +9,12 @@
     <title>Quantum Mind</title>
 </head>
 
-<body class="bg-dark p-2 text-dark bg-opacity-25">
-    <header class="d-flex justify-content-evenly ">
+<body class="bg-dark">
+    <header class="d-flex justify-content-evenly mt-4 ">
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid">
                 <img src="../../public/img/android-chrome-192x192.png" height="100" alt="">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Admin</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,16 +41,10 @@
         </nav>
 
     </header>
-    <main class="container my-3">
+    <main class="container my-3 mt-5">
+        
         <section>
-            <h2>Task app</h2>
-            <h3>Settings</h3>
-            <article>
-                <i class="bi bi-house"></i>
-            </article>
-        </section>
-        <section>
-            <main class="container my-3 d-flex justify-content-center">
+            <main class="container my-3 d-flex flex-column">
                 <form action="./index.html" id="form" method="post" class="next-validation" novalidate>
 
                     <div class="form-floating mb-3">
@@ -71,15 +65,15 @@
 
                     <div class="text-center">
                         <button type="submit" id="btn-save" class="btn btn-outline-warning">Save</button>
-                        <button type="reset" id="btn-save" class="btn btn-outline-info">Cancel</button>
+                        <button type="reset" id="btn-cancel" class="btn btn-outline-info">Cancel</button>
                         <!--me limpia los campos de un formulario-->
                     </div>
 
                 </form>
 
                 <table
-                    class="table table-striped table-hover table-bordered border-primary align-middle text-center text-capitalize">
-                    <caption class="caption-top">List of users</caption>
+                    class="table table-striped table-hover table-bordered border-primary align-middle text-center text-capitalize mt-4">
+                    <caption class="caption-top text-light bg-dark">List of users</caption>
                     <thead></thead>
                     <thead>
                         <tr>
