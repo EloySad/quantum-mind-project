@@ -136,8 +136,8 @@ function showResult(answerIndex) {
   const button2 = document.createElement("button");
   button1.textContent = "< RESTART";
   button2.textContent = "SIGN UP!";
-  button1.classList.add("btn-outline-danger");
-  button2.classList.add("btn-outline-success");
+  button1.classList.add("btn-danger");
+  button2.classList.add("btn-success");
   button1.classList.add("btn");
   button2.classList.add("btn");
   botonesDiv.appendChild(button1);
