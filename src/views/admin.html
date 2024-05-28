@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Quantum Mind</title>
+</head>
+
+<body class="bg-dark">
+    <header class="d-flex justify-content-evenly mt-4 ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <img src="../../public/img/android-chrome-192x192.png" height="100" alt="">
+                <a class="navbar-brand" href="#">Admin</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <main class="container my-3 mt-5">
+        
+        <section>
+            <main class="container my-3 d-flex flex-column">
+                <form action="./index.html" id="form" method="post" class="next-validation" novalidate>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name(s)" required>
+                        <label for="name">Name(s)</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="last-name" name="last-name"
+                            placeholder="Last name(s)" required>
+                        <label for="last-name">Last Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" id="btn-save" class="btn btn-outline-warning">Save</button>
+                        <button type="reset" id="btn-cancel" class="btn btn-outline-info">Cancel</button>
+                        <!--me limpia los campos de un formulario-->
+                    </div>
+
+                </form>
+
+                <table
+                    class="table table-striped table-hover table-bordered border-primary align-middle text-center text-capitalize mt-4">
+                    <caption class="caption-top text-light bg-dark">List of users</caption>
+                    <thead></thead>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-devider">
+                    </tbody>
+                </table>
+            </main>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+
+</body>
+
+</html>
