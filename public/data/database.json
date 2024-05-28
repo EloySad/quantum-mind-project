@@ -1,17 +1,16 @@
 {
-  "users": [
-    {
-      "id": "002",
-      "userName": "Herbin",
-      "lastName": "xxxxx",
-      "email": "herbon07@gmail.com",
-      "password": "2222"
-    },
-    {
-      "userName": "KEVIN",
-      "lastName": "RUIZ",
-      "email": "alejo06@gmail.com",
-      "id": "003"
-    }
-  ]
+    "users": [{
+            "id": "002",
+            "userName": "Herbin",
+            "lastName": "xxxxx",
+            "email": "herbon07@gmail.com",
+            "password": "2222"
+        },
+        {
+            "userName": "KEVIN",
+            "lastName": "RUIZ",
+            "email": "alejo06@gmail.com",
+            "id": "003"
+        }
+    ]
 }
