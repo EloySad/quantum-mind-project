@@ -7,3 +7,11 @@ export function showAlertSuccess ()  {
         icon: "success"
       });
 }
+
+export function showAlertSuccess2 ()  {
+  Swal.fire({
+      title: "Done!",
+      text: "You are suscribed now to our newsletter",
+      icon: "success"
+    });
+}

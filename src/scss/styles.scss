@@ -121,7 +121,7 @@ header {
   color: black !important;
 }
 
-//CHAT GPT
+//ANIMACIONES BOTONES
 .lista button {
   background: transparent;
   position: relative;
@@ -532,6 +532,7 @@ footer {
     rgba(0, 54, 147, 1), /* Color secundario más oscuro */
     var(--color-texto)
   );;
+  height: 100px;
 }
 
 .form-control {
@@ -540,6 +541,12 @@ footer {
   width: 400px;
 }
 
+#newsletterForm {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 footer div {
   margin-top: 20px;
   gap: 30px;
