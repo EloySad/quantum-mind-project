@@ -61,7 +61,7 @@ const descriptionPersonality = [
   "Te consideras un mago del código, un ninja de la programación y un arquitecto del futuro digital. Te apasiona cada línea de código que escribes y te emociona cada nuevo proyecto que te desafía a superar tus límites. Para ti, cada bug es solo una oportunidad para aprender algo nuevo y cada desafío técnico es solo otro obstáculo en el emocionante viaje hacia la perfección del código. ¡Eres el rockstar del teclado!",
   "Tu mente es un lienzo digital, y la tecnología es tu pincel. Te encanta explorar nuevos mundos digitales, experimentar con colores brillantes y formas sorprendentes, y crear experiencias que cautivan los sentidos y desafían la imaginación. Para ti, la tecnología no es solo herramientas y gadgets, es un lienzo en blanco esperando ser llenado con tu creatividad ilimitada. ¡Eres el Picasso del pixel!",
   "Eres el explorador del ciberespacio, el aventurero del algoritmo y el detective del dato perdido. Tu curiosidad insaciable te impulsa a buscar respuestas a las preguntas más intrigantes y a descubrir los secretos más profundos del universo digital. Para ti, la tecnología es un vasto océano de posibilidades esperando ser explorado, y cada nueva tecnología es solo otro misterio por resolver. ¡Eres el Sherlock Holmes de la cibernética!",
-];
+];  
 let currentQuestionIndex = 0;
 const questionContainer = document.getElementById("questionContainer");
 const optionsContainer = document.getElementById("optionsContainer");

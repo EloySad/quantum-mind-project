@@ -45,16 +45,38 @@
 }
 body {
   font-family: "Fredoka", sans-serif;
-  background-color: rgb(246, 246, 246);
-  color: black !important;
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+  // background: linear-gradient(
+  //   to bottom right,
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+  // background: linear-gradient(
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+  background: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );
+  color: white !important;
 }
 
 header {
   padding-top: 5px;
   width: 100%;
   height: 100px;
+  position:static;  
   border-bottom: 1px solid black;
-  position: absolute;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -62,8 +84,12 @@ header {
   padding-left: 60px !important;
   padding-right: 60px !important;
   justify-content: space-around;
-  background-color: transparent; /* Esto hará que el fondo sea transparente */
-  transition: top 0.3s ease; /* Agrega una transición suave a la propiedad top */
+  background-color: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );;
 }
 
 .lista {
@@ -285,10 +311,11 @@ section video {
   left: 0;
   display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: white;
-  gap: 8px;
-  bottom: 500px;
+  bottom: 520px;
 }
 .botoneslanding2 {
   display: flex;
@@ -297,7 +324,7 @@ section video {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
-  bottom: 540px;
+  bottom: 500px;
 }
 
 .botoneslanding3 {
@@ -330,6 +357,13 @@ section video {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.gif-container {
+  position: absolute;
+  z-index: 1;
+  right: 200px;
 }
 
 .card-body {
@@ -339,6 +373,7 @@ section video {
   justify-content: center;
   padding: 70px;
   padding-right: 120px;
+  z-index: 2;
 }
 .card-body h5 {
   font-size: 30px;
@@ -349,6 +384,7 @@ section video {
 
 .card-button {
   width: 30%;
+  z-index: 2;
 }
 
 .suscription-box {
@@ -367,9 +403,9 @@ section video {
   justify-content: center;
   text-align: center;
   background-image: url("../../public/img/fondo.png"); /* Ruta de la imagen de fondo */
-  background-size: 1200px 800px;
+  background-size: 1500px 800px;
+  height: 1000px;
   background-position: center;
-  height: 1200px;
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
@@ -430,25 +466,19 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 120px;
-  margin-left: 10px;
-  margin-right: 50px;
-  margin-bottom: 50px;
   grid-gap: 120px;
 }
 
 figure {
-  width: 100%;
-  height: 100%;
   position: relative;
   border-width: 0.5px;
 }
 
 .grid figure img {
   object-fit: cover;
-  object-position: center;
   height: 100%;
   width: 100%;
-  object-position: initial;
+  object-position: center;
   opacity: 0.4;
   padding: 20px;
 }
@@ -556,6 +586,7 @@ footer div div {
 .custom-icon:hover {
   color: var(--color-secundario);
 }
+/// end of FOOTER
 
 // LOG IN AND SIGN UP
 
@@ -726,6 +757,7 @@ form button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 20px;
 }
 #personalityForm h2 {
   text-align: center;
@@ -749,6 +781,7 @@ form button {
   flex-direction: column; /* Organiza los elementos en una fila horizontal */
   justify-content: center; /* Centra horizontalmente los elementos */
   text-align: center;
+  gap: 10px;
 }
 
 #optionsContainer label {

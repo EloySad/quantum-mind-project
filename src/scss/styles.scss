@@ -45,12 +45,12 @@
 }
 body {
   font-family: "Fredoka", sans-serif;
-  background: radial-gradient(
-    circle,
-    rgba(85, 120, 175, 1),
-    rgba(221, 221, 221, 1),
-    rgba(255, 255, 255, 1)
-  );
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
   // background: linear-gradient(
   //   to bottom right,
   //   rgba(85, 120, 175, 1),
@@ -62,8 +62,13 @@ body {
   //   rgba(221, 221, 221, 1),
   //   rgba(255, 255, 255, 1)
   // );
-
-  color: black !important;
+  background: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );
+  color: white !important;
 }
 
 header {
@@ -79,7 +84,7 @@ header {
   padding-left: 60px !important;
   padding-right: 60px !important;
   justify-content: space-around;
-  background-color: transparent; /* Esto hará que el fondo sea transparente */
+  background-color:rgb(0, 0, 0,0.295); /* Esto hará que el fondo sea transparente */
   transition: top 0.3s ease; /* Agrega una transición suave a la propiedad top */
 }
 
@@ -302,10 +307,11 @@ section video {
   left: 0;
   display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: white;
-  gap: 8px;
-  bottom: 500px;
+  bottom: 520px;
 }
 .botoneslanding2 {
   display: flex;
@@ -314,7 +320,7 @@ section video {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
-  bottom: 540px;
+  bottom: 500px;
 }
 
 .botoneslanding3 {
@@ -484,7 +490,6 @@ figure {
   display: flex;
   position: relative;
   height: 500px;
-  margin-bottom: 200px;
   margin-top: 120px;
   align-items: center;
   justify-content: center;
@@ -521,6 +526,12 @@ footer {
   align-items: center;
   text-align: center;
   margin: 0px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );;
 }
 
 .form-control {
@@ -698,27 +709,32 @@ form button {
 
 // Carrousel
 
+.carousel {
+  max-width: 1400px; /* Ancho máximo del carrusel */
+  margin: auto; /* Centrar el carrusel en la página */
+}
+
+.carousel h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Luckiest guy",sans-serif;
+}
+
+.carousel h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 100px; /* Fondo semitransparente para los textos */
   color: white;
   padding: 20px;
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%; /* Ajustar el tamaño de los controles de navegación */
+/* Tamaño de las imágenes dentro del carrusel */
+.carousel-item img {
+  max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  height: auto; /* Mantener la proporción de aspecto */
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1); /* Invertir el color de los íconos de navegación */
-}
-
-.carousel-indicators {
-  bottom: 10px; /* Posicionar los indicadores en la parte inferior */
-}
-
 .carousel-indicators button {
   background-color: rgba(
     255,
@@ -728,6 +744,18 @@ form button {
   ); /* Fondo semitransparente para los indicadores */
 }
 
-.carousel-indicators .active {
-  background-color: white; /* Color de fondo para el indicador activo */
+/* Tamaño de los controles de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3%; /* Ajustar el tamaño de los controles de navegación */
+}
+
+/* Tamaño de los indicadores */
+.carousel-indicators {
+  bottom: 5px; /* Posicionar los indicadores en la parte inferior */
+}
+
+.carousel-indicators button {
+  width: 10px; /* Ajustar el tamaño de los indicadores */
+  height: 10px; /* Ajustar el tamaño de los indicadores */
 }
