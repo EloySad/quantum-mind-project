@@ -40,7 +40,7 @@
   font-family: "Luckiest Guy", sans-serif;
 }
 
-.container h1 {
+.container1 h1 {
   font-family: "Luckiest Guy", sans-serif;
 }
 body {
@@ -410,6 +410,8 @@ h2 {
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
+  width: 1000px;
+  height: auto;
 }
 
 .video-wrapper video {
@@ -687,7 +689,6 @@ footer div div {
   position: absolute;
   z-index: -1;
 }
-
 
 
 .btn-a {
