@@ -4,6 +4,11 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Indie+Flower&family=Jacquard+12+Charted&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --color-white: #ffffff;
+
+}
 // #bgames{
 //     background: rgba(1, 1, 50, 0.502);
 //     background: linear-gradient(to bottom, #050561 0%, #030341bc 100%);
@@ -25,14 +30,13 @@
 
 }
 
-#bgames {
-    background-image: url('../../public/vid/4K\ BLUE\ PARTICLES\ PARTICULAS\ AZUL.mp4');
-    background-size: cover;
-    /* Ajusta el tamaño del video para cubrir todo el fondo */
-    background-repeat: repeat;
-    /* Evita que el video se repita */
-}
+////////////-----------------[Inician estilos fondo de video en movimiento]----------------\\\\\\\\\\\\\
 
+#bgames {
+    background-image: url('../../public/vid/4K\ BLUE\ PARTICLES\ PARTICULAS\ AZUL.mp4');   
+    background-size: cover;
+    background-repeat: repeat;
+}
 #miVideo {
     position: fixed;
     top: 0;
@@ -40,15 +44,63 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ajusta el tamaño del video para cubrir todo el fondo */
     z-index: -1;
-    /* Coloca el video detrás de otros elementos */
 }
+
+////////////-----------------[Terminan estilos fondo de video en movimiento]----------------\\\\\\\\\\\\\
+
+
+
+////////////-----------------[Inician estilos rama de programacion basica]----------------\\\\\\\\\\\\\
+
+.title-box {//contenedor general de ventana titulo y descripcion de rama
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+}
+
+.title-box-m {//propiedades de fondo de ventana y espacios
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(29, 31, 33, 0.5); /* Color de fondo con opacidad */
+    height: 40%;
+    width: 1310px;
+    border-radius: 30px;   
+    padding: 30px;
+    
+}
+
+.text-description-m {//texto mensaje descripcion rama programacion
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.game-box{//contenedor general de juegos rama programacion
+
+    align-items: center;
+    background-color: rgb(29, 31, 33, 0.5);
+    height: 1150px;
+    width: 1200px;
+    padding: 20px;
+    border-radius: 30px; 
+    margin-top: -80px; 
+}
+
+////////////-----------------[Finalizan estilos rama de programacion basica]----------------\\\\\\\\\\\\\
+
+
+//¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ END GAMES SECTION¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+
 
 .Category {
     padding-top: 3%;
     padding-bottom: 2%;
 }
+
 
 .titleG {
     text-align: center;
@@ -157,7 +209,7 @@
     cursor: pointer;
 }
 
-//¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ END GAMES SECTION¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+
 
 .mision-vision {
     background-color: #f9f9f9;
@@ -177,53 +229,9 @@
 
 /* Section de suscribirse*/
 
-.s-box {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    
-}
 
-.d{//contenedor de juegos en vista de rama programacion
 
-    align-items: center;
-    background-color: rgb(29, 31, 33, 0.5);
-    height: 1150px;
-    width: 1200px;
-    padding: 20px;
-    border-radius: 30px; 
-    margin-top: -80px; 
-}
 
-.s-divs {//ventana con introduccion y rama dprogramcopm 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(29, 31, 33, 0.5); /* Color de fondo con opacidad */
-    height: 40%;
-    width: 1310px;
-    border-radius: 30px;   
-    padding: 30px;
-    
-}
-
-.s-div1 {
-    display: flex;
-    margin-right: 5px;
-    flex-direction: column;
-}
-
-.s-text {
-    color: white;
-    font-size: 30px;
-}
-
-.s-text2 {
-    color: white;
-    font-size: 20px;
-}
 
 .s-button {
     background-color: #002b5b;
