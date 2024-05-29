@@ -3,13 +3,14 @@
 @import "bootstrap/scss/bootstrap";
 
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 
-/*Reiniciamos los estilos del navegador*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+// fuente
+@font-face {
+  font-family: MiFuentePersonalizada; /* Nombre que le das a tu fuente */
+  src: url("../../public/fonts/baloo/Baloo-Regular.ttf") format("truetype"); /* Ruta relativa a la carpeta de fuentes */
 }
 
 :root {
@@ -20,16 +21,44 @@
   --color-gris: grey;
 }
 
+.botoneslanding1 h1 {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 80px;
+}
+
+.botoneslanding1 span {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 80px;
+  color: rgb(0, 94, 255);
+}
+
+.faq2 p {
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+.container2 h1 {
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+.container h1 {
+  font-family: "Luckiest Guy", sans-serif;
+}
 body {
   font-family: "Fredoka", sans-serif;
-  background-color: black;
+
+  background: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), 
+    rgba(0, 54, 147, 1), 
+    var(--color-texto)
+  );
   color: white !important;
 }
 
 header {
   padding-top: 5px;
   width: 100%;
-  height: 90px;
+  height: 100px;
   border-bottom: 1px solid black;
   position: fixed;
   font-size: 20px;
@@ -39,7 +68,8 @@ header {
   padding-left: 60px !important;
   padding-right: 60px !important;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.295); /* Esto hará que el fondo sea transparente */
+  background-color:rgb(0, 0, 0,0.295); /* Esto hará que el fondo sea transparente */
+  transition: top 0.3s ease; /* Agrega una transición suave a la propiedad top */
 }
 
 .lista {
@@ -49,20 +79,13 @@ header {
   /* Elimina el relleno predeterminado de la lista */
   margin: 0;
   display: flex;
-  gap: 120px;
+  gap: 20px;
   /* Separa los elementos de la lista*/
 }
 
-.lista2 {
-  list-style-type: none;
-  display: flex;
-  padding: 0px;
-  /* Elimina el relleno predeterminado de la lista */
-  margin: 0;
-  gap: 50px;
-}
 .logo {
-  width: 100px;
+  border-radius: 100px;
+  width: 75px;
 }
 
 .enlace2 {
@@ -75,7 +98,14 @@ header {
   color: inherit;
 }
 
-//CHAT GPT
+// NAV BAR
+
+#botonhome,
+#aboutus {
+  color: black !important;
+}
+
+//ANIMACIONES BOTONES
 .lista button {
   background: transparent;
   position: relative;
@@ -90,7 +120,7 @@ header {
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: white;
+  color: var(--color-secundario);
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
@@ -117,21 +147,13 @@ header {
   z-index: -1;
 }
 
-.lista button:hover {
-  color: #002b5b;
-}
-
 .lista button:hover::before {
   box-shadow: inset 0 0 0 10em white;
-}
-
-.lista2 a {
-  text-decoration: none !important;
-  color: inherit;
+  color: var(--color-secundario);
 }
 
 .lista button {
-  color: white;
+  color: var(--color-secundario);
 }
 
 .cssbuttons-iou {
@@ -252,7 +274,7 @@ header {
   position: relative; /* Asegura que cualquier contenido dentro de la sección se posicione correctamente */
   width: 100%;
   overflow: hidden; /* Evita que el video se desborde fuera de la sección */
-  height: 800px;
+  height: 900px;
 }
 
 section video {
@@ -269,10 +291,11 @@ section video {
   left: 0;
   display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: white;
-  gap: 8px;
-  bottom: 500px;
+  bottom: 520px;
 }
 .botoneslanding2 {
   display: flex;
@@ -281,7 +304,15 @@ section video {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
-  bottom: 540px;
+  bottom: 500px;
+}
+
+.botoneslanding3 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end;
+  align-items: end;
 }
 
 .button1 {
@@ -296,67 +327,53 @@ section video {
   border: 1px solid white;
 }
 
-/* Section de suscribirse*/
+/* Section de TEST*/
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-secundario);
+  color: #ecf0f1;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gif-container {
+  position: absolute;
+  z-index: 1;
+  right: 200px;
+}
+
+.card-body {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+  padding-right: 120px;
+  z-index: 2;
+}
+.card-body h5 {
+  font-size: 30px;
+}
+.card-text {
+  font-size: 20px;
+}
+
+.card-button {
+  width: 30%;
+  z-index: 2;
+}
 
 .suscription-box {
   display: flex;
   max-width: 100%;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 150px;
   margin-bottom: 150px;
-}
-
-.suscription-divs {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #002b5b;
-  height: 300px;
-  width: 1200px;
-  border-radius: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.suscription-div1 {
-  display: flex;
-  margin-right: 5px;
-  flex-direction: column;
-}
-
-.suscription-text {
-  color: white;
-  font-size: 30px;
-}
-
-.suscription-text2 {
-  color: white;
-  font-size: 20px;
-}
-
-.suscription-button {
-  background-color: #002b5b;
-  color: white;
-}
-
-input[type="submit"] {
-  background-color: none;
-  border: 1px solid white;
-  border-radius: 50px;
-  width: 200px;
-  height: 50px;
-  font-size: 30px;
-}
-input[type="submit"]:hover {
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 50px;
-  width: 200px;
-  height: 50px;
-  font-size: 30px;
-  color: #002b5b;
-  transition: color 1.5s, transform 2s, box-shadow 1s;
 }
 
 // section get to know us
@@ -366,9 +383,9 @@ input[type="submit"]:hover {
   justify-content: center;
   text-align: center;
   background-image: url("../../public/img/fondo.png"); /* Ruta de la imagen de fondo */
-  background-size: 1200px 800px;
+  background-size: 1500px 800px;
+  height: 1000px;
   background-position: center;
-  height: 1200px;
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
@@ -429,25 +446,19 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 120px;
-  margin-left: 10px;
-  margin-right: 50px;
-  margin-bottom: 50px;
   grid-gap: 120px;
 }
 
 figure {
-  width: 100%;
-  height: 100%;
   position: relative;
   border-width: 0.5px;
 }
 
 .grid figure img {
   object-fit: cover;
-  object-position: center;
   height: 100%;
   width: 100%;
-  object-position: initial;
+  object-position: center;
   opacity: 0.4;
   padding: 20px;
 }
@@ -461,93 +472,100 @@ figure {
 
 .FAQS {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   position: relative;
   height: 500px;
-  margin-bottom: 200px;
-}
-
-.faqs {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 80px;
-}
-
-.faq1 {
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.question1 {
-  display: none;
-}
-
-.question-label1 {
-  padding: 10px;
-  width: 500px;
-  height: 80px;
-  text-align: left;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  font-size: 25px;
-  padding-left: 30px;
-}
-
-.answer1 {
-  color: black;
-  max-height: 0;
-  overflow: hidden;
-  transition: transform 2s ease max-height 2s ease; /* Añadir transición para suavizar la expansión */
-  padding: 0 10px;
-  background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  font-size: 15px;
-  padding-left: 30px;
-}
-
-.question1:checked + .question-label1 + .answer1 {
-  display: block;
-  max-height: 1000px; /* Establecer una altura máxima suficientemente grande para mostrar la respuesta completa */
-  border-bottom-left-radius: 0; /* Quitar el radio de borde inferior cuando se abre la respuesta */
-  border-bottom-right-radius: 0; /* Quitar el radio de borde inferior cuando se abre la respuesta */
-  transition: transform 3s ease, max-height 3s ease, box-shadow 2s;
-}
-
-.question1:checked + .question-label1 {
-  font-weight: bold; /* Hacer que el texto de la pregunta sea en negrita cuando se abre la respuesta */
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
 }
 
 .faq2 {
-  position: absolute;
-  left: 180px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: inline;
+  width: 40%; /* Ajusta el ancho del elemento al 50% del contenedor padre */
+  float: left; /* Hace que el elemento flote a la izquierda */
+  padding: 0 20px; /* Añade relleno para separarlo del borde */
 }
 
-.faq2 h1 {
-  font-size: 80px;
-}
-.faq2 h2 {
-  font-size: 30px;
+.accordion {
+  width: 60%; /* Ajusta el ancho del elemento al 50% del contenedor padre */
+  float: right; /* Hace que el elemento flote a la derecha */
+  padding: 0 20px; /* Añade relleno para separarlo del borde */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
 }
 
+// Footer
+
+footer {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );;
+  height: 100px;
+}
+
+.form-control {
+  border-radius: 50px;
+  height: 45px;
+  width: 400px;
+}
+
+#newsletterForm {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+footer div {
+  margin-top: 20px;
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div div {
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-left: 50px;
+}
+.footerpart1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerpart2 {
+  width: 50%;
+}
 // icons
 
 .icons {
-  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 50px;
   z-index: 5;
-  margin-top: 20px;
 }
 
 .custom-icon {
@@ -558,30 +576,11 @@ figure {
 }
 
 .custom-icon:hover {
-  color: #002b5b;
+  color: var(--color-secundario);
 }
+/// end of FOOTER
 
-// Footer
-
-footer {
-  border-top: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.form-control {
-  border-radius: 50px;
-  height: 45px;
-}
-
-footer div {
-  margin-top: 20px;
-}
-
-// boton begin
+// LOG IN AND SIGN UP
 
 .cssbuttons-io-button {
   background: rgb(0, 94, 255);
@@ -600,6 +599,7 @@ footer div {
   height: 2.8em;
   padding-right: 3.3em;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cssbuttons-io-button .icon {
@@ -639,4 +639,114 @@ footer div {
 
 form button {
   border-radius: 100px;
+}
+
+.new-button {
+  border-radius: 150px;
+  padding: 15px;
+  width: 230px;
+}
+
+.new-button2 {
+  border-radius: 150px;
+  width: 150px;
+  font-size: 25px;
+  height: 50px;
+  font-weight: 500;
+}
+
+.bi.bi-play {
+  width: 40px; /* Cambia el ancho del SVG a 32 píxeles */
+  height: 40px; /* Cambia la altura del SVG a 32 píxeles */
+}
+
+.submit {
+  border-radius: 100px;
+  height: 40px;
+  width: 150px;
+}
+
+// videitos
+
+/* Agrega el video como fondo */
+
+.videitos {
+  position: relative; /* Asegura que cualquier contenido dentro de la sección se posicione correctamente */
+  width: 100%;
+  overflow: hidden; /* Evita que el video se desborde fuera de la sección */
+  height: 750px;
+}
+
+.videitos video {
+  /* Posiciona el video de forma absoluta dentro de la sección */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir toda la sección */
+  position: absolute;
+  z-index: -1;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  border-radius: 100px;
+}
+
+.btn.btn-outline-light:hover a {
+  color: #002b5b;
+}
+
+// Carrousel
+
+.carousel {
+  max-width: 1400px; /* Ancho máximo del carrusel */
+  margin: auto; /* Centrar el carrusel en la página */
+}
+
+.carousel h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Luckiest guy",sans-serif;
+}
+
+.carousel h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100px; /* Fondo semitransparente para los textos */
+  color: white;
+  padding: 20px;
+}
+/* Tamaño de las imágenes dentro del carrusel */
+.carousel-item img {
+  max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  height: auto; /* Mantener la proporción de aspecto */
+}
+.carousel-indicators button {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Fondo semitransparente para los indicadores */
+}
+
+/* Tamaño de los controles de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3%; /* Ajustar el tamaño de los controles de navegación */
+}
+
+/* Tamaño de los indicadores */
+.carousel-indicators {
+  bottom: 5px; /* Posicionar los indicadores en la parte inferior */
+}
+
+.carousel-indicators button {
+  width: 10px; /* Ajustar el tamaño de los indicadores */
+  height: 10px; /* Ajustar el tamaño de los indicadores */
 }
