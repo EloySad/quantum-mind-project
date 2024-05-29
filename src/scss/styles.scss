@@ -45,27 +45,11 @@
 }
 body {
   font-family: "Fredoka", sans-serif;
-  // background: radial-gradient(
-  //   circle,
-  //   rgba(85, 120, 175, 1),
-  //   rgba(221, 221, 221, 1),
-  //   rgba(255, 255, 255, 1)
-  // );
-  // background: linear-gradient(
-  //   to bottom right,
-  //   rgba(85, 120, 175, 1),
-  //   rgba(221, 221, 221, 1),
-  //   rgba(255, 255, 255, 1)
-  // );
-  // background: linear-gradient(
-  //   rgba(85, 120, 175, 1),
-  //   rgba(221, 221, 221, 1),
-  //   rgba(255, 255, 255, 1)
-  // );
+
   background: radial-gradient(
     circle,
-    rgba(0, 43, 91, 1), /* Color primario más oscuro */
-    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    rgba(0, 43, 91, 1), 
+    rgba(0, 54, 147, 1), 
     var(--color-texto)
   );
   color: white !important;
