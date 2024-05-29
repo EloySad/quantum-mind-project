@@ -10,58 +10,60 @@ import { showAlertSuccess } from "./alerts";
 
 // Definición de las preguntas y respuestas
 const questions = [
-  "Cuando te enfrentas a un problema técnico, ¿cuál es tu enfoque principal?",
-  "Qué aspecto de la tecnología te resulta más fascinante?",
-  "Qué te motiva a aprender más sobre tecnología?",
-  "Cómo prefieres abordar un nuevo proyecto tecnológico?",
-  "Qué te resulta más emocionante de la tecnología?",
+  "When facing a technical problem, what is your main approach?",
+  "What aspect of technology fascinates you the most?",
+  "What motivates you to learn more about technology?",
+  "How do you prefer to approach a new technological project?",
+  "What do you find most exciting about technology?",
 ];
 
 const answers = [
   [
-    "Analizar detalladamente el problema.",
-    "Probar diferentes soluciones hasta encontrar una que funcione.",
-    "Investigar en línea en busca de posibles soluciones.",
-    "Pedir ayuda a colegas o comunidades en línea.",
+    "Thoroughly analyze the problem.",
+    "Try different solutions until finding one that works.",
+    "Research online for possible solutions.",
+    "Seek help from colleagues or online communities.",
   ],
   [
-    "Crear programas y aplicaciones desde cero.",
-    "Explorar nuevas tecnologías y frameworks.",
-    "Diseñar interfaces de usuario intuitivas y atractivas.",
-    "Experimentar con herramientas y gadgets tecnológicos.",
+    "Building programs and applications from scratch.",
+    "Exploring new technologies and frameworks.",
+    "Designing intuitive and attractive user interfaces.",
+    "Experimenting with technological tools and gadgets.",
   ],
   [
-    "Resolver desafíos técnicos complejos.",
-    "Desarrollar habilidades de programación avanzadas.",
-    "Expresar mi creatividad a través del diseño digital.",
-    "Satisfacer mi curiosidad por entender cómo funcionan las cosas.",
+    "Solving complex technical challenges.",
+    "Developing advanced programming skills.",
+    "Expressing creativity through digital design.",
+    "Satisfying curiosity by understanding how things work.",
   ],
   [
-    "Planificar cuidadosamente cada paso antes de comenzar.",
-    "Sumergirme directamente en el código y aprender sobre la marcha.",
-    "Diseñar un prototipo visual antes de comenzar la implementación.",
-    "Investigar y experimentar con diferentes enfoques antes de decidir.",
+    "Carefully plan each step before starting.",
+    "Dive directly into the code and learn on the go.",
+    "Design a visual prototype before starting implementation.",
+    "Research and experiment with different approaches before deciding.",
   ],
   [
-    "La posibilidad de resolver problemas complejos de manera eficiente.",
-    "La libertad para crear y experimentar con nuevas ideas.",
-    "La oportunidad de diseñar experiencias digitales únicas y atractivas.",
-    "El constante cambio y evolución del panorama tecnológico.",
+    "The ability to efficiently solve complex problems.",
+    "The freedom to create and experiment with new ideas.",
+    "The opportunity to design unique and engaging digital experiences.",
+    "The constant change and evolution of the technological landscape.",
   ],
 ];
-// Definición de los tipos de personalidad
+
+// Personality types definition
 const personalityTypes = [
-  "Solucionador de Problemas Tecnológicos",
-  "Entusiasta de la Programación",
-  "Creativo Digital",
-  "Curioso Tecnológico",
+  "Technological Problem Solver",
+  "Programming Enthusiast",
+  "Digital Creative",
+  "Technological Curious",
 ];
+
 const descriptionPersonality = [
-  "Eres el héroe del código, el maestro del Ctrl + Z y el experto en encontrar agujeros en el sistema más inquebrantable. Cuando se trata de tecnología, no hay problema que no puedas solucionar con un poco de café y una dosis extra de determinación. Tus amigos te buscan cuando sus dispositivos están en apuros, porque saben que tienes el poder de convertir el caos en orden con un solo clic. ¡Eres el hacker de la vida cotidiana!",
-  "Te consideras un mago del código, un ninja de la programación y un arquitecto del futuro digital. Te apasiona cada línea de código que escribes y te emociona cada nuevo proyecto que te desafía a superar tus límites. Para ti, cada bug es solo una oportunidad para aprender algo nuevo y cada desafío técnico es solo otro obstáculo en el emocionante viaje hacia la perfección del código. ¡Eres el rockstar del teclado!",
-  "Tu mente es un lienzo digital, y la tecnología es tu pincel. Te encanta explorar nuevos mundos digitales, experimentar con colores brillantes y formas sorprendentes, y crear experiencias que cautivan los sentidos y desafían la imaginación. Para ti, la tecnología no es solo herramientas y gadgets, es un lienzo en blanco esperando ser llenado con tu creatividad ilimitada. ¡Eres el Picasso del pixel!",
-  "Eres el explorador del ciberespacio, el aventurero del algoritmo y el detective del dato perdido. Tu curiosidad insaciable te impulsa a buscar respuestas a las preguntas más intrigantes y a descubrir los secretos más profundos del universo digital. Para ti, la tecnología es un vasto océano de posibilidades esperando ser explorado, y cada nueva tecnología es solo otro misterio por resolver. ¡Eres el Sherlock Holmes de la cibernética!",
-];  
+  "You're the code hero, the master of Ctrl + Z, and the expert at finding holes in the most unbreakable system. When it comes to technology, there's no problem you can't solve with a little coffee and an extra dose of determination. Your friends seek you out when their devices are in trouble because they know you have the power to turn chaos into order with a single click. You're the everyday life hacker!",
+  "You consider yourself a code wizard, a programming ninja, and an architect of the digital future. You're passionate about every line of code you write, and every new project excites you, challenging you to push your limits. For you, every bug is just an opportunity to learn something new, and every technical challenge is just another obstacle on the exciting journey towards code perfection. You're the keyboard rockstar!",
+  "Your mind is a digital canvas, and technology is your brush. You love to explore new digital worlds, experiment with bright colors and surprising shapes, and create experiences that captivate the senses and challenge the imagination. For you, technology is not just tools and gadgets, it's a blank canvas waiting to be filled with your limitless creativity. You're the pixel Picasso!",
+  "You're the cyberspace explorer, the algorithm adventurer, and the detective of the lost data. Your insatiable curiosity drives you to seek answers to the most intriguing questions and uncover the deepest secrets of the digital universe. For you, technology is a vast ocean of possibilities waiting to be explored, and every new technology is just another mystery to be solved. You're the Sherlock Holmes of cybernetics!",
+];
 let currentQuestionIndex = 0;
 const questionContainer = document.getElementById("questionContainer");
 const optionsContainer = document.getElementById("optionsContainer");
