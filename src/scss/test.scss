@@ -1,0 +1,852 @@
+@import url("normalize.scss");
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+// fuente
+@font-face {
+  font-family: MiFuentePersonalizada; /* Nombre que le das a tu fuente */
+  src: url("../../public/fonts/baloo/Baloo-Regular.ttf") format("truetype"); /* Ruta relativa a la carpeta de fuentes */
+}
+
+:root {
+  --color-primario: #002b5b;
+  --color-secundario: rgb(0, 94, 255);
+  --color-fondo: #ecf0f1;
+  --color-texto: #000000;
+  --color-gris: grey;
+}
+
+.botoneslanding1 h1 {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 80px;
+}
+
+.botoneslanding1 span {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 80px;
+  color: rgb(0, 94, 255);
+}
+
+.faq2 p {
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+.container2 h1 {
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+.container h1 {
+  font-family: "Luckiest Guy", sans-serif;
+}
+body {
+  font-family: "Fredoka", sans-serif;
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+  // background: linear-gradient(
+  //   to bottom right,
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+  // background: linear-gradient(
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+  background: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );
+  color: white !important;
+}
+
+header {
+  padding-top: 5px;
+  width: 100%;
+  height: 100px;
+  position:static;  
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  justify-content: space-around;
+  background-color: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );;
+}
+
+.lista {
+  list-style-type: none;
+  /* Elimina los marcadores de lista */
+  padding: 0;
+  /* Elimina el relleno predeterminado de la lista */
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  /* Separa los elementos de la lista*/
+}
+
+.logo {
+  border-radius: 100px;
+  width: 75px;
+}
+
+.enlace2 {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.enlace3 {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+// NAV BAR
+
+#botonhome,
+#aboutus {
+  color: black !important;
+}
+
+//CHAT GPT
+.lista button {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: var(--color-secundario);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.lista button span {
+  margin: 10px;
+}
+
+.lista button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.lista button:hover::before {
+  box-shadow: inset 0 0 0 10em white;
+  color: var(--color-secundario);
+}
+
+.lista button {
+  color: var(--color-secundario);
+}
+
+.cssbuttons-iou {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  border-radius: 1.5em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #002b5b, rgb(0, 94, 255));
+  color: white;
+  overflow: hidden;
+}
+
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  border-radius: 1.5em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #002b5b, rgb(0, 94, 255));
+  color: white;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-iou svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-iou span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-iou::before,
+.cssbuttons-iou::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-iou::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+.cssbuttons-iou:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+.cssbuttons-iou:active {
+  transform: scale(0.95);
+}
+///
+
+/* Section del video */
+
+.videosection {
+  position: relative; /* Asegura que cualquier contenido dentro de la sección se posicione correctamente */
+  width: 100%;
+  overflow: hidden; /* Evita que el video se desborde fuera de la sección */
+  height: 900px;
+}
+
+section video {
+  /* Posiciona el video de forma absoluta dentro de la sección */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir toda la sección */
+}
+
+.botoneslanding1 {
+  position: relative;
+  left: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  bottom: 520px;
+}
+.botoneslanding2 {
+  display: flex;
+  left: 0;
+  position: relative;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  bottom: 500px;
+}
+
+.botoneslanding3 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end;
+  align-items: end;
+}
+
+.button1 {
+  text-decoration: none !important;
+  color: grey;
+}
+
+.button2 {
+  text-decoration: none !important;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+/* Section de TEST*/
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-secundario);
+  color: #ecf0f1;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gif-container {
+  position: absolute;
+  z-index: 1;
+  right: 200px;
+}
+
+.card-body {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+  padding-right: 120px;
+  z-index: 2;
+}
+.card-body h5 {
+  font-size: 30px;
+}
+.card-text {
+  font-size: 20px;
+}
+
+.card-button {
+  width: 30%;
+  z-index: 2;
+}
+
+.suscription-box {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 150px;
+}
+
+// section get to know us
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../../public/img/fondo.png"); /* Ruta de la imagen de fondo */
+  background-size: 1500px 800px;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// grid
+
+.GRIDS {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 700px;
+  margin-top: 100px;
+}
+.container2 {
+  width: 100%;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    200px
+  ); /* Una fila con 5 columnas de 300px cada una */
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  grid-gap: 120px;
+}
+
+figure {
+  position: relative;
+  border-width: 0.5px;
+}
+
+.grid figure img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  opacity: 0.4;
+  padding: 20px;
+}
+.grid figure img:hover {
+  opacity: 2;
+  transition: opacity 0.5s, transform 1s;
+  cursor: pointer;
+}
+
+//FAQS
+
+.FAQS {
+  display: flex;
+  position: relative;
+  height: 500px;
+  margin-bottom: 200px;
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.faq2 {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: inline;
+  width: 40%; /* Ajusta el ancho del elemento al 50% del contenedor padre */
+  float: left; /* Hace que el elemento flote a la izquierda */
+  padding: 0 20px; /* Añade relleno para separarlo del borde */
+}
+
+.accordion {
+  width: 60%; /* Ajusta el ancho del elemento al 50% del contenedor padre */
+  float: right; /* Hace que el elemento flote a la derecha */
+  padding: 0 20px; /* Añade relleno para separarlo del borde */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+// Footer
+
+footer {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+}
+
+.form-control {
+  border-radius: 50px;
+  height: 45px;
+  width: 400px;
+}
+
+footer div {
+  margin-top: 20px;
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div div {
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-left: 50px;
+}
+.footerpart1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerpart2 {
+  width: 50%;
+}
+// icons
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  z-index: 5;
+}
+
+.custom-icon {
+  color: grey;
+  font-size: 30px;
+  width: 25px;
+  height: 25px;
+}
+
+.custom-icon:hover {
+  color: var(--color-secundario);
+}
+/// end of FOOTER
+
+// LOG IN AND SIGN UP
+
+.cssbuttons-io-button {
+  background: rgb(0, 94, 255);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em rgb(0, 94, 255);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 2em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #002b5b;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #002b5b;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+// others
+
+form button {
+  border-radius: 100px;
+}
+
+.new-button {
+  border-radius: 150px;
+  padding: 15px;
+  width: 230px;
+}
+
+.new-button2 {
+  border-radius: 150px;
+  width: 150px;
+  font-size: 25px;
+  height: 50px;
+  font-weight: 500;
+}
+
+.bi.bi-play {
+  width: 40px; /* Cambia el ancho del SVG a 32 píxeles */
+  height: 40px; /* Cambia la altura del SVG a 32 píxeles */
+}
+
+.submit {
+  border-radius: 100px;
+  height: 40px;
+  width: 150px;
+}
+
+// videitos
+
+/* Agrega el video como fondo */
+
+.videitos {
+  position: relative; /* Asegura que cualquier contenido dentro de la sección se posicione correctamente */
+  width: 100%;
+  overflow: hidden; /* Evita que el video se desborde fuera de la sección */
+  height: 750px;
+}
+
+.videitos video {
+  /* Posiciona el video de forma absoluta dentro de la sección */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir toda la sección */
+  position: absolute;
+  z-index: -1;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  border-radius: 100px;
+}
+
+.btn.btn-outline-light:hover a {
+  color: #002b5b;
+}
+
+// Carrousel
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100px; /* Fondo semitransparente para los textos */
+  color: white;
+  padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Ajustar el tamaño de los controles de navegación */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Invertir el color de los íconos de navegación */
+}
+
+.carousel-indicators {
+  bottom: 10px; /* Posicionar los indicadores en la parte inferior */
+}
+
+.carousel-indicators button {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Fondo semitransparente para los indicadores */
+}
+
+.carousel-indicators .active {
+  background-color: white; /* Color de fondo para el indicador activo */
+}
+
+// test
+
+#personalityTest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  margin-top: 50px;
+  width: 100%;
+}
+#personalityForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#personalityForm h2 {
+  text-align: center;
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+#siguiente {
+  display: flex;
+  justify-content: center;
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+#questionContainer {
+  text-align: center;
+  font-size: 30px;
+}
+#optionsContainer {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una fila horizontal */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  text-align: center;
+  gap: 10px;
+}
+
+#optionsContainer label {
+  margin: 0 10px; /* Ajusta el margen entre cada opción */
+  font-size: 20px;
+}
+
+#optionsContainer input[type="radio"] {
+  margin-right: 10px; /* Ajusta el valor según sea necesario */
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 50px;
+}
+
+#botones {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-family: "Luckiest Guy", sans-serif;
+  margin-top: 70px;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+#botones button {
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.personality-description {
+  font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+// video de fondo
+.videitos {
+  position: relative; /* Asegura que cualquier contenido dentro de la sección se posicione correctamente */
+  width: 100%;
+  overflow: hidden; /* Evita que el video se desborde fuera de la sección */
+  height: 800px;
+}
+
+.videitos video {
+  /* Posiciona el video de forma absoluta dentro de la sección */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir toda la sección */
+  position: absolute;
+  z-index: -1;
+}
