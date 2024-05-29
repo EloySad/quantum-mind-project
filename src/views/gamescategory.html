@@ -12,22 +12,27 @@
 
     <video id="Video" src="../../public/vid/4K BLUE PARTICLES PARTICULAS AZUL.mp4" autoplay loop muted></video>
 
-    <header>
-        <a href="index.html" class="enlace1"><img src="../../public/img/QM-LOGO-Photoroom (1).png" class="logo" /></a>
-        <nav class="barranavegacion">
-            <ul class="lista">
-                <li class="one">
-                    <button><a href="./games.html" class="enlace2"><span>Home</span></a></button>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="lista2">
-                <li>
-                    <button class="cssbuttons-iou" id="btn-logout"><span>Logout</span></a></button>
-                </li>
-            </ul>
-        </nav>
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="../../public/img/android-chrome-512x512.png" class="logo" />
+            </a>
+        </div>
+         <!-- nav bar! -->
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 lista">
+            <li>
+                <button><a href="#" class="nav-link px-2 link-secondary" id="botonhome">Home</a>
+            </li></button>
+        </ul>
+        <!-- loging and register --> 
+
+        <div class="col-md-3 text-end botoneslanding3">
+            <button type="button" class="btn btn-outline-light new-button2"><a href="../views/admin.html">Admin</a></button>
+            <button type="button" class="btn btn-primary new-button2" id="btn-logout">Logout</button>
+        </div>
+
     </header>
     <main>
 
