@@ -7,7 +7,7 @@ import * as bootstrap from "bootstrap";
 // Llamar funcion
 
 import { showAlertSuccess } from "./alerts";
-
+import { showAlertSuccess2 } from "./alerts";
 // Definición de las preguntas y respuestas
 const questions = [
   "When facing a technical problem, what is your main approach?",
@@ -167,3 +167,27 @@ showCurrentQuestion();
 
 // Agregar evento de escucha al botón de "Siguiente"
 nextButton.addEventListener("click", goToNextQuestion);
+
+
+// suscribirse
+function isValidEmail(email) {
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+}
+
+function getSuscribed(event) {
+  var emailInput = document.getElementById("exampleInputEmail1");
+  var email = emailInput.value.trim();
+  event.preventDefault();
+  // Verifica si el correo electrónico es válido
+  if (isValidEmail(email)) {
+      // Limpia el campo de correo electrónico
+      emailInput.value = "";
+      // Muestra una alerta de éxito
+      showAlertSuccess2();
+  } else {
+      // Muestra una alerta pidiendo al usuario que ingrese un correo electrónico válido
+      alert("Please enter a valid email address.");
+  }
+}
+document.getElementById("submitButton").addEventListener("click", getSuscribed);

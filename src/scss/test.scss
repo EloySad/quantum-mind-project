@@ -45,27 +45,11 @@
 }
 body {
   font-family: "Fredoka", sans-serif;
-  // background: radial-gradient(
-  //   circle,
-  //   rgba(85, 120, 175, 1),
-  //   rgba(221, 221, 221, 1),
-  //   rgba(255, 255, 255, 1)
-  // );
-  // background: linear-gradient(
-  //   to bottom right,
-  //   rgba(85, 120, 175, 1),
-  //   rgba(221, 221, 221, 1),
-  //   rgba(255, 255, 255, 1)
-  // );
-  // background: linear-gradient(
-  //   rgba(85, 120, 175, 1),
-  //   rgba(221, 221, 221, 1),
-  //   rgba(255, 255, 255, 1)
-  // );
+
   background: radial-gradient(
     circle,
-    rgba(0, 43, 91, 1), /* Color primario más oscuro */
-    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    rgba(0, 43, 91, 1), 
+    rgba(0, 54, 147, 1), 
     var(--color-texto)
   );
   color: white !important;
@@ -75,7 +59,6 @@ header {
   padding-top: 5px;
   width: 100%;
   height: 100px;
-  position:static;  
   border-bottom: 1px solid black;
   font-size: 20px;
   display: flex;
@@ -84,12 +67,8 @@ header {
   padding-left: 60px !important;
   padding-right: 60px !important;
   justify-content: space-around;
-  background-color: radial-gradient(
-    circle,
-    rgba(0, 43, 91, 1), /* Color primario más oscuro */
-    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
-    var(--color-texto)
-  );;
+  background-color:rgb(0, 0, 0,0.295); /* Esto hará que el fondo sea transparente */
+  transition: top 0.3s ease; /* Agrega una transición suave a la propiedad top */
 }
 
 .lista {
@@ -125,7 +104,7 @@ header {
   color: black !important;
 }
 
-//CHAT GPT
+//ANIMACIONES BOTONES
 .lista button {
   background: transparent;
   position: relative;
@@ -349,7 +328,7 @@ section video {
 
 /* Section de TEST*/
 
-.card {
+.card1 {
   display: flex;
   flex-direction: row;
   background-color: var(--color-secundario);
@@ -366,7 +345,7 @@ section video {
   right: 200px;
 }
 
-.card-body {
+.card-body1 {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -375,14 +354,14 @@ section video {
   padding-right: 120px;
   z-index: 2;
 }
-.card-body h5 {
+.card-body1 h5 {
   font-size: 30px;
 }
-.card-text {
+.card-text1 {
   font-size: 20px;
 }
 
-.card-button {
+.card-button1 {
   width: 30%;
   z-index: 2;
 }
@@ -409,7 +388,7 @@ section video {
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-.container {
+.container1 {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
@@ -469,7 +448,7 @@ h2 {
   grid-gap: 120px;
 }
 
-figure {
+.grid figure {
   position: relative;
   border-width: 0.5px;
 }
@@ -494,7 +473,6 @@ figure {
   display: flex;
   position: relative;
   height: 500px;
-  margin-bottom: 200px;
   margin-top: 120px;
   align-items: center;
   justify-content: center;
@@ -531,6 +509,13 @@ footer {
   align-items: center;
   text-align: center;
   margin: 0px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 43, 91, 1), /* Color primario más oscuro */
+    rgba(0, 54, 147, 1), /* Color secundario más oscuro */
+    var(--color-texto)
+  );;
+  height: 100px;
 }
 
 .form-control {
@@ -539,6 +524,12 @@ footer {
   width: 400px;
 }
 
+#newsletterForm {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 footer div {
   margin-top: 20px;
   gap: 30px;
@@ -645,7 +636,7 @@ footer div div {
 
 // others
 
-form button {
+#submitButton {
   border-radius: 100px;
 }
 
@@ -663,12 +654,12 @@ form button {
   font-weight: 500;
 }
 
-.bi.bi-play {
+.play {
   width: 40px; /* Cambia el ancho del SVG a 32 píxeles */
   height: 40px; /* Cambia la altura del SVG a 32 píxeles */
 }
 
-.submit {
+.submit1 {
   border-radius: 100px;
   height: 40px;
   width: 150px;
@@ -696,39 +687,46 @@ form button {
   z-index: -1;
 }
 
-.btn a {
+
+
+.btn-a {
   text-decoration: none;
   color: white;
   border-radius: 100px;
 }
 
-.btn.btn-outline-light:hover a {
+.light:hover a {
   color: #002b5b;
 }
 
 // Carrousel
 
+.carousel {
+  max-width: 1400px; /* Ancho máximo del carrusel */
+  margin: auto; /* Centrar el carrusel en la página */
+}
+
+.carousel h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Luckiest guy",sans-serif;
+}
+
+.carousel h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 100px; /* Fondo semitransparente para los textos */
   color: white;
   padding: 20px;
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%; /* Ajustar el tamaño de los controles de navegación */
+/* Tamaño de las imágenes dentro del carrusel */
+.carousel-item img {
+  max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  height: auto; /* Mantener la proporción de aspecto */
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1); /* Invertir el color de los íconos de navegación */
-}
-
-.carousel-indicators {
-  bottom: 10px; /* Posicionar los indicadores en la parte inferior */
-}
-
 .carousel-indicators button {
   background-color: rgba(
     255,
@@ -738,8 +736,20 @@ form button {
   ); /* Fondo semitransparente para los indicadores */
 }
 
-.carousel-indicators .active {
-  background-color: white; /* Color de fondo para el indicador activo */
+/* Tamaño de los controles de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3%; /* Ajustar el tamaño de los controles de navegación */
+}
+
+/* Tamaño de los indicadores */
+.carousel-indicators {
+  bottom: 5px; /* Posicionar los indicadores en la parte inferior */
+}
+
+.carousel-indicators button {
+  width: 10px; /* Ajustar el tamaño de los indicadores */
+  height: 10px; /* Ajustar el tamaño de los indicadores */
 }
 
 // test
