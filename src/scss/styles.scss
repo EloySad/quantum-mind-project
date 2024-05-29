@@ -45,7 +45,24 @@
 }
 body {
   font-family: "Fredoka", sans-serif;
-  background-color: rgb(246, 246, 246);
+  background: radial-gradient(
+    circle,
+    rgba(85, 120, 175, 1),
+    rgba(221, 221, 221, 1),
+    rgba(255, 255, 255, 1)
+  );
+  // background: linear-gradient(
+  //   to bottom right,
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+  // background: linear-gradient(
+  //   rgba(85, 120, 175, 1),
+  //   rgba(221, 221, 221, 1),
+  //   rgba(255, 255, 255, 1)
+  // );
+
   color: black !important;
 }
 
