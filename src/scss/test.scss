@@ -25,24 +25,45 @@
   font-family: "Luckiest Guy", sans-serif;
   font-size: 80px;
 }
+
+.botoneslanding1 span {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 80px;
+  color: rgb(0, 94, 255);
+}
+
+.faq2 p {
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+.container2 h1 {
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+.container h1 {
+  font-family: "Luckiest Guy", sans-serif;
+}
 body {
   font-family: "Fredoka", sans-serif;
-  background-color: black;
-  color: white !important;
+  background-color: rgb(246, 246, 246);
+  color: black !important;
 }
 
 header {
   padding-top: 5px;
   width: 100%;
-  height: 90px;
+  height: 100px;
   border-bottom: 1px solid black;
+  position: absolute;
   font-size: 20px;
   display: flex;
   align-items: center;
+  z-index: 5;
   padding-left: 60px !important;
   padding-right: 60px !important;
   justify-content: space-around;
   background-color: transparent; /* Esto hará que el fondo sea transparente */
+  transition: top 0.3s ease; /* Agrega una transición suave a la propiedad top */
 }
 
 .lista {
@@ -52,20 +73,13 @@ header {
   /* Elimina el relleno predeterminado de la lista */
   margin: 0;
   display: flex;
-  gap: 120px;
+  gap: 20px;
   /* Separa los elementos de la lista*/
 }
 
-.lista2 {
-  list-style-type: none;
-  display: flex;
-  padding: 0px;
-  /* Elimina el relleno predeterminado de la lista */
-  margin: 0;
-  gap: 50px;
-}
 .logo {
-  width: 100px;
+  border-radius: 100px;
+  width: 75px;
 }
 
 .enlace2 {
@@ -76,6 +90,13 @@ header {
 .enlace3 {
   text-decoration: none !important;
   color: inherit;
+}
+
+// NAV BAR
+
+#botonhome,
+#aboutus {
+  color: black !important;
 }
 
 //CHAT GPT
@@ -93,7 +114,7 @@ header {
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: white;
+  color: var(--color-secundario);
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
@@ -120,21 +141,13 @@ header {
   z-index: -1;
 }
 
-.lista button:hover {
-  color: #002b5b;
-}
-
 .lista button:hover::before {
   box-shadow: inset 0 0 0 10em white;
-}
-
-.lista2 a {
-  text-decoration: none !important;
-  color: inherit;
+  color: var(--color-secundario);
 }
 
 .lista button {
-  color: white;
+  color: var(--color-secundario);
 }
 
 .cssbuttons-iou {
@@ -255,7 +268,7 @@ header {
   position: relative; /* Asegura que cualquier contenido dentro de la sección se posicione correctamente */
   width: 100%;
   overflow: hidden; /* Evita que el video se desborde fuera de la sección */
-  height: 800px;
+  height: 900px;
 }
 
 section video {
@@ -287,6 +300,14 @@ section video {
   bottom: 540px;
 }
 
+.botoneslanding3 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end;
+  align-items: end;
+}
+
 .button1 {
   text-decoration: none !important;
   color: grey;
@@ -299,67 +320,44 @@ section video {
   border: 1px solid white;
 }
 
-/* Section de suscribirse*/
+/* Section de TEST*/
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-secundario);
+  color: #ecf0f1;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+  padding-right: 120px;
+}
+.card-body h5 {
+  font-size: 30px;
+}
+.card-text {
+  font-size: 20px;
+}
+
+.card-button {
+  width: 30%;
+}
 
 .suscription-box {
   display: flex;
   max-width: 100%;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 150px;
   margin-bottom: 150px;
-}
-
-.suscription-divs {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #002b5b;
-  height: 300px;
-  width: 1200px;
-  border-radius: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.suscription-div1 {
-  display: flex;
-  margin-right: 5px;
-  flex-direction: column;
-}
-
-.suscription-text {
-  color: white;
-  font-size: 30px;
-}
-
-.suscription-text2 {
-  color: white;
-  font-size: 20px;
-}
-
-.suscription-button {
-  background-color: #002b5b;
-  color: white;
-}
-
-input[type="submit"] {
-  background-color: none;
-  border: 1px solid white;
-  border-radius: 50px;
-  width: 200px;
-  height: 50px;
-  font-size: 30px;
-}
-input[type="submit"]:hover {
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 50px;
-  width: 200px;
-  height: 50px;
-  font-size: 30px;
-  color: #002b5b;
-  transition: color 1.5s, transform 2s, box-shadow 1s;
 }
 
 // section get to know us
@@ -384,6 +382,11 @@ input[type="submit"]:hover {
 h1 {
   font-size: 50px;
   margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 70px;
 }
 
 .video-wrapper {
@@ -458,89 +461,89 @@ figure {
 //FAQS
 
 .FAQS {
+  display: flex;
+  position: relative;
   height: 500px;
   margin-bottom: 200px;
-}
-
-.faqs {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 80px;
-}
-
-.faq1 {
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.question1 {
-  display: none;
-}
-
-.question-label1 {
-  padding: 10px;
-  width: 500px;
-  height: 80px;
-  text-align: left;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  font-size: 25px;
-  padding-left: 30px;
-}
-
-.answer1 {
-  color: black;
-  max-height: 0;
-  overflow: hidden;
-  transition: transform 2s ease max-height 2s ease; /* Añadir transición para suavizar la expansión */
-  padding: 0 10px;
-  background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  font-size: 15px;
-  padding-left: 30px;
-}
-
-.question1:checked + .question-label1 + .answer1 {
-  display: block;
-  max-height: 1000px; /* Establecer una altura máxima suficientemente grande para mostrar la respuesta completa */
-  border-bottom-left-radius: 0; /* Quitar el radio de borde inferior cuando se abre la respuesta */
-  border-bottom-right-radius: 0; /* Quitar el radio de borde inferior cuando se abre la respuesta */
-  transition: transform 3s ease, max-height 3s ease, box-shadow 2s;
-}
-
-.question1:checked + .question-label1 {
-  font-weight: bold; /* Hacer que el texto de la pregunta sea en negrita cuando se abre la respuesta */
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
 }
 
 .faq2 {
-  position: absolute;
-  left: 180px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: inline;
+  width: 40%; /* Ajusta el ancho del elemento al 50% del contenedor padre */
+  float: left; /* Hace que el elemento flote a la izquierda */
+  padding: 0 20px; /* Añade relleno para separarlo del borde */
 }
 
-.faq2 h1 {
-  font-size: 80px;
-}
-.faq2 h2 {
-  font-size: 30px;
+.accordion {
+  width: 60%; /* Ajusta el ancho del elemento al 50% del contenedor padre */
+  float: right; /* Hace que el elemento flote a la derecha */
+  padding: 0 20px; /* Añade relleno para separarlo del borde */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
 }
 
+// Footer
+
+footer {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+}
+
+.form-control {
+  border-radius: 50px;
+  height: 45px;
+  width: 400px;
+}
+
+footer div {
+  margin-top: 20px;
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div div {
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-left: 50px;
+}
+.footerpart1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerpart2 {
+  width: 50%;
+}
 // icons
 
 .icons {
-  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 50px;
   z-index: 5;
-  margin-top: 20px;
 }
 
 .custom-icon {
@@ -551,30 +554,10 @@ figure {
 }
 
 .custom-icon:hover {
-  color: #002b5b;
+  color: var(--color-secundario);
 }
 
-// Footer
-
-footer {
-  border-top: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.form-control {
-  border-radius: 50px;
-  height: 45px;
-}
-
-footer div {
-  margin-top: 20px;
-}
-
-// boton begin
+// LOG IN AND SIGN UP
 
 .cssbuttons-io-button {
   background: rgb(0, 94, 255);
@@ -637,9 +620,18 @@ form button {
 
 .new-button {
   border-radius: 150px;
-  padding: 20px;
-  width: 200px;
+  padding: 15px;
+  width: 230px;
 }
+
+.new-button2 {
+  border-radius: 150px;
+  width: 150px;
+  font-size: 25px;
+  height: 50px;
+  font-weight: 500;
+}
+
 .bi.bi-play {
   width: 40px; /* Cambia el ancho del SVG a 32 píxeles */
   height: 40px; /* Cambia la altura del SVG a 32 píxeles */
@@ -649,6 +641,74 @@ form button {
   border-radius: 100px;
   height: 40px;
   width: 150px;
+}
+
+// videitos
+
+/* Agrega el video como fondo */
+
+.videitos {
+  position: relative; /* Asegura que cualquier contenido dentro de la sección se posicione correctamente */
+  width: 100%;
+  overflow: hidden; /* Evita que el video se desborde fuera de la sección */
+  height: 750px;
+}
+
+.videitos video {
+  /* Posiciona el video de forma absoluta dentro de la sección */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir toda la sección */
+  position: absolute;
+  z-index: -1;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  border-radius: 100px;
+}
+
+.btn.btn-outline-light:hover a {
+  color: #002b5b;
+}
+
+// Carrousel
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100px; /* Fondo semitransparente para los textos */
+  color: white;
+  padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Ajustar el tamaño de los controles de navegación */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Invertir el color de los íconos de navegación */
+}
+
+.carousel-indicators {
+  bottom: 10px; /* Posicionar los indicadores en la parte inferior */
+}
+
+.carousel-indicators button {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Fondo semitransparente para los indicadores */
+}
+
+.carousel-indicators .active {
+  background-color: white; /* Color de fondo para el indicador activo */
 }
 
 // test
