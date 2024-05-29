@@ -11,24 +11,27 @@
 
 <body class="bg-dark">
     <header>
-        <a href="../views/games.html" class="enlace1"><img src="../../public/img/QM-LOGO-Photoroom (1).png" class="logo"/></a>
-      <nav class="barranavegacion">
-      </nav>
-      <nav>
-        <ul class="lista2">
-          
-          <li>
-            <button class="cssbuttons-iou"><a href="../auth/register.html"><span>Sign up</span
-            ></a></button>
-          </li>
-        </ul>
-      </nav>
+        <!-- SE CREA BARRA DE NAVEGACIÓN CON LOGO Y BOTÓN DE SIGN UP  -->
+        <a href="../views/games.html" class="enlace1"><img src="../../public/img/QM-LOGO-Photoroom (1).png"
+                class="logo" /></a>
+        <nav class="barranavegacion">
+        </nav>
+        <nav>
+            <ul class="lista2">
+
+                <li>
+                    <button class="cssbuttons-iou"><a href="../auth/register.html"><span>Sign up</span></a></button>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main class="container my-3 mt-0">
+        <!-- EN EL MAIN INCORPORAMOS UN VIDEO PROMOCIONAL PARA ATRAER Y GENERAR PRIMER ACERCAMIENTO A USUARIOS NUEVOS -->
         <video autoplay muted loop id="bg-reg" src="../../public/vid/landing.mp4">
         </video>
         <section>
             <main class="container my-3 d-flex flex-column">
+                <!-- SE CREA UN FORMULARIO CON LOS CAMPOS REQUERIDOS PARA LOS USUARIOS, DATOS BÁSICOS -->
                 <form action="./index.html" id="form" method="post" class="next-validation mt-5" novalidate>
 
                     <div class="form-floating mb-3">
@@ -48,13 +51,14 @@
                     </div>
 
                     <div class="text-center">
+                        <!-- SE CREAN BOTONES PARA GUARDAR CAMBIOS DE EDICIÓN Y PARA CANCELAR LA ACCIÓN -->
                         <button type="submit" id="btn-save" class="btn btn-outline-warning">Save</button>
                         <button type="reset" id="btn-cancel" class="btn btn-outline-info">Cancel</button>
                         <!--me limpia los campos de un formulario-->
                     </div>
 
                 </form>
-
+                <!-- SE INCORPORA UNA TABLA CON LOS DATOS BASICOS DE LOS USUARIOS PARA EL  MANTENER UN REGISTRO, MODIFICACIÓN O ELIMINACIÓN DE USUARIOS -->
                 <table
                     class="table table-striped table-hover table-bordered border-primary align-middle text-center text-capitalize mt-4">
                     <caption class="caption-top text-light bg-dark">List of users</caption>
@@ -78,6 +82,7 @@
     <footer>
 
     </footer>
+    <!-- SE HACEN ENLACES CON DOCUMENTOS DE JS PARA GENERAR ARMONÍ FUNCIONAL ENTRE LOS ARCHIVOS -->
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/admin.js"></script>
 

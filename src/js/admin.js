@@ -1,3 +1,5 @@
+// SE IMPORTAN ESTILOS DE SCSS Y CLASES DE BOOTSTRAP
+
 import '../scss/styles.scss'
 import '../scss/auth.scss'
 import * as bootstrap from 'bootstrap'
@@ -45,7 +47,7 @@ tbody.addEventListener('click', async function (event) {
 })
 
 
-
+// SE CREAN LAS FUNCIONES Y SE REALIZAN EMPALMES CON LOS DEMAS ARCHIVOS
 async function index() {
     const response = await fetch(URL)
     const data = await response.json()
