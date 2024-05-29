@@ -329,7 +329,7 @@ section video {
 
 /* Section de TEST*/
 
-.card {
+.card1 {
   display: flex;
   flex-direction: row;
   background-color: var(--color-secundario);
@@ -346,7 +346,7 @@ section video {
   right: 200px;
 }
 
-.card-body {
+.card-body1 {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -355,14 +355,14 @@ section video {
   padding-right: 120px;
   z-index: 2;
 }
-.card-body h5 {
+.card-body1 h5 {
   font-size: 30px;
 }
-.card-text {
+.card-text1 {
   font-size: 20px;
 }
 
-.card-button {
+.card-button1 {
   width: 30%;
   z-index: 2;
 }
@@ -449,7 +449,7 @@ h2 {
   grid-gap: 120px;
 }
 
-figure {
+.grid figure {
   position: relative;
   border-width: 0.5px;
 }
@@ -637,7 +637,7 @@ footer div div {
 
 // others
 
-form button {
+#submitButton {
   border-radius: 100px;
 }
 
@@ -655,12 +655,12 @@ form button {
   font-weight: 500;
 }
 
-.bi.bi-play {
+.play {
   width: 40px; /* Cambia el ancho del SVG a 32 píxeles */
   height: 40px; /* Cambia la altura del SVG a 32 píxeles */
 }
 
-.submit {
+.submit1 {
   border-radius: 100px;
   height: 40px;
   width: 150px;
@@ -688,13 +688,15 @@ form button {
   z-index: -1;
 }
 
-.btn a {
+
+
+.btn-a {
   text-decoration: none;
   color: white;
   border-radius: 100px;
 }
 
-.btn.btn-outline-light:hover a {
+.light:hover a {
   color: #002b5b;
 }
 
