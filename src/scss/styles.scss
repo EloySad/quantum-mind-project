@@ -347,6 +347,13 @@ section video {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.gif-container {
+  position: absolute;
+  z-index: 1;
+  right: 200px;
 }
 
 .card-body {
@@ -356,6 +363,7 @@ section video {
   justify-content: center;
   padding: 70px;
   padding-right: 120px;
+  z-index: 2;
 }
 .card-body h5 {
   font-size: 30px;
@@ -366,6 +374,7 @@ section video {
 
 .card-button {
   width: 30%;
+  z-index: 2;
 }
 
 .suscription-box {
@@ -384,9 +393,9 @@ section video {
   justify-content: center;
   text-align: center;
   background-image: url("../../public/img/fondo.png"); /* Ruta de la imagen de fondo */
-  background-size: 1200px 800px;
-  background-position: center;
+  background-size: 1500px 1000px;
   height: 1200px;
+  background-position: center;
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
