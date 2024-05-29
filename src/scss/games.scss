@@ -1,43 +1,18 @@
-//¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ START GAMES SECTION¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+////////////-------------------------------[imports]------------------------------\\\\\\\\\\\\\
 //Style of page game
 @import url('normalize.scss');
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Indie+Flower&family=Jacquard+12+Charted&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root {
-    --color-white: #ffffff;
-
-}
-// #bgames{
-//     background: rgba(1, 1, 50, 0.502);
-//     background: linear-gradient(to bottom, #050561 0%, #030341bc 100%);
-
-//     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01013a), color-stop(100%, #00002e));
-// }
-
-
-.containerCategory {//contendeor jeugos
-    max-width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5%;
-  }
-
-.textddd {
-    font-family: "Luckiest Guy", cursive;
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-////////////-----------------[Inician estilos fondo de video en movimiento]----------------\\\\\\\\\\\\\
+////////////----------------------[began style backgroud animate]-----------------------\\\\\\\\\\\\\
 
 #bgames {
     background-image: url('../../public/vid/4K\ BLUE\ PARTICLES\ PARTICULAS\ AZUL.mp4');   
     background-size: cover;
     background-repeat: repeat;
 }
-#miVideo {
+#Video {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,13 +22,11 @@
     z-index: -1;
 }
 
-////////////-----------------[Terminan estilos fondo de video en movimiento]----------------\\\\\\\\\\\\\
+////////////-----------------[End style backgroud animate]----------------\\\\\\\\\\\\\
 
+////////////-----------------[began style branch programming basis]----------------\\\\\\\\\\\\\
 
-
-////////////-----------------[Inician estilos rama de programacion basica]----------------\\\\\\\\\\\\\
-
-.title-box {//contenedor general de ventana titulo y descripcion de rama
+.title-box {//Main box of title and description of branch programming 
     display: flex;
     max-width: 100%;
     justify-content: center;
@@ -62,11 +35,11 @@
     
 }
 
-.title-box-m {//propiedades de fondo de ventana y espacios
+.title-box-m {//style of background of windows and spaces
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(29, 31, 33, 0.5); /* Color de fondo con opacidad */
+    background-color: rgb(29, 31, 33, 0.5); 
     height: 40%;
     width: 1310px;
     border-radius: 30px;   
@@ -74,12 +47,12 @@
     
 }
 
-.text-description-m {//texto mensaje descripcion rama programacion
+.text-description-m {//text of mesange description branch programming
     color: var(--color-white);
     font-size: 20px;
 }
 
-.game-box{//contenedor general de juegos rama programacion
+.game-box{//Main box of games branch programming
 
     align-items: center;
     background-color: rgb(29, 31, 33, 0.5);
@@ -90,43 +63,26 @@
     margin-top: -80px; 
 }
 
-////////////-----------------[Finalizan estilos rama de programacion basica]----------------\\\\\\\\\\\\\
+////////////-----------------[End style branch programming basis]----------------\\\\\\\\\\\\\
 
 
-//¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ END GAMES SECTION¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+////////////-----------------[Began style view branch technology]----------------\\\\\\\\\\\\\
 
-
-.Category {
-    padding-top: 3%;
-    padding-bottom: 2%;
-}
-
-
-.titleG {
-    text-align: center;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    margin-top: 50px;
-}
-
-.titleG2 {
-    text-align: center;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    margin-top: 50px;
+.container-games {//Main box of branch technology
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
     padding-top: 10%;
+  }
 
+.font-name-branch{
+
+    font-size: x-large;
 }
 
-.titleG3 {
-    text-align: center;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    
-    padding-top: 7%;
-
+.up{
+    margin-top: -5%;
 }
-
 
 .card:hover {
     transform: scale(1.1);
@@ -134,129 +90,5 @@
     box-shadow: 0px 0px 10px rgba(231, 227, 227, 0.3);
 }
 
-
-// Style games1
-#containerFOooter {
-    margin-top: 10%;
-}
-
-
-
-/* Estilos para el card */
-.card1 {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #FFFFFF;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-/* Estilos para el contenido interno */
-.titulo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.descripcion {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0074D9;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.boton:hover {
-    background-color: #0056A7;
-}
-
-/* Estilos para el modal */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-contenido {
-    background-color: #040404;
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    position: relative;
-}
-
-.cerrar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-
-
-.mision-vision {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-}
-
-.mision-vision h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-.mision-vision p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Section de suscribirse*/
-
-
-
-
-
-.s-button {
-    background-color: #002b5b;
-    color: white;
-}
-
-/* Estilos para la tarjeta */
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Estilos para la imagen */
-.card1 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* Estilos para el título */
-.card1 h2 {
-    font-size: 1.5rem;
-    margin-top: 12px;
-}
+////////////-----------------[End style view branch technology]----------------\\\\\\\\\\\\\
 
