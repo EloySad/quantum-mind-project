@@ -10,7 +10,7 @@
 
 <body>
     <!-- Encabezado de la página -->
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
         <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
           <img src="./public/img/android-chrome-512x512.png" class="logo" />
@@ -27,8 +27,8 @@
         <!-- LOGEARSE Y REGISTRARSE -->
 
       <div class="col-md-3 text-end botoneslanding3">
-        <button type="button" class="btn btn-primary new-button2"><a href="./src/auth/login.html">Log in</a></button>
-        <button type="button" class="btn btn-outline-light new-button2"><a href="./src/auth/register.html">Sign up!</a></button>
+        <button type="button" class="btn btn-primary new-button2"><a href="./src/auth/login.html" class="btn-a">Log in</a></button>
+        <button type="button" class="btn btn-outline-light new-button2 btn-a light"><a href="./src/auth/register.html" class="btn-a">Sign up!</a></button>
       </div>
 
   </header>
@@ -44,9 +44,9 @@
         <h3>There is no limits for knowledge!</h3>
       </div>
       <div class="botoneslanding2">
-        <button type="button" class="btn btn-primary btn-lg new-button"><a href="./src/views/pricing.html">GET STARTED</a></button>
-        <button type="button" class="btn btn-outline-light new-button"><a href="#get-to-know-us-video">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+        <button type="button" class="btn btn-primary btn-lg new-button"><a href="./src/views/pricing.html" class="btn-a">GET STARTED</a></button>
+        <button type="button" class="btn btn-outline-light new-button light"><a href="#get-to-know-us-video" class="btn-a">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play play"
             viewBox="0 0 16 16">
             <path
               d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
@@ -56,30 +56,29 @@
     <!-- Seccion para hacer el TEST DE PERSONALIDAD -->
 
     <section class="suscription-box">
-      <div class="card2" style="width: 60rem; height: 17rem;">
         
-        <div class="card-body">
+        <div class="card-body1">
             <h5 class="card-title">Do you need help figuring out where to start?</h5>
             <br>
-            <p class="card-text">The Quantum Quiz will recommend the "class" that best suits you and will only take 5 minutes.</p>
+            <p class="card-text1">The Quantum Quiz will recommend the "class" that best suits you and will only take 5 minutes.</p>
         </div>
         <div class="gif-container">
           <img src="./public/img/cat.gif" alt="Descripción del GIF">
       </div>
-        <div class="card-button">
-            <button type="button" class="btn btn-outline-light new-button"><a href="./src/views/test.html">BEGIN TEST</a></button>
+        <div class="card-button1">
+            <button type="button" class="btn btn-outline-light new-button light"><a href="./src/views/test.html" class="btn-a">BEGIN TEST</a></button>
         </div>
     </div>
     </section>
     <!-- Video para saber que es QUANTUM MIND -->
 
     <section class="video-section" id="get-to-know-us-video">
-      <div class="container">
+      <div class="container1">
         <h1>GET TO KNOW US</h1>
         <h2>What is Quantum Mind?</h2>
         <div class="video-wrapper">
-          <video controls poster="/public/img/carousel.jpg  ">
-            <source src="./public/vid/quantum.mp4" type="video/mp4" />
+          <video controls poster="/public/img/carousel.jpg">
+            <source src="./public/vid/quantum.mp4" type="video/mp4"/>
             Tu navegador no soporta el elemento de video.
           </video>
         </div>
@@ -269,7 +268,7 @@
             <label for="exampleInputEmail1" class="form-label1"></label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Enter your e-mail" required>
-            <button type="submit" class="btn btn-primary submit" id="submitButton">Submit</button>
+            <button type="submit" class="btn btn-primary submit1 btn-a" id="submitButton">Submit</button>
         </form>
         </div>  
     <div class="icons">
@@ -296,7 +295,6 @@
           <!-- Llamando el codigo main.js -->
 
   <script type="module" src="./src/js/main.js"></script>
-
 </body>
 
 </html>
