@@ -329,7 +329,10 @@ section video {
 
 /* Section de TEST*/
 
+
+
 .card1 {
+
   display: flex;
   flex-direction: row;
   background-color: var(--color-secundario);
@@ -524,7 +527,7 @@ footer {
 .form-control {
   border-radius: 50px;
   height: 45px;
-  width: 400px;
+  width: 300px;
 }
 
 #newsletterForm {
