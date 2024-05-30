@@ -1,5 +1,10 @@
 // Import our custom CSS
+<<<<<<< HEAD
+import '../scss/styles.scss'
+import '../scss/pricing.scss'
+=======
 import "../scss/styles.scss";
+>>>>>>> 00a9f5a14009a21b79d0c501de721712ac7b698e
 
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
