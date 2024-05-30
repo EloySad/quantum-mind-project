@@ -46,6 +46,8 @@ long term: Latin American users
 outreach: ‘The only limits you have are the limits you believe in’. - Wayne Dyer’.
 
 for more information of logs and minutes can see this link: https://docs.google.com/document/d/1UbmfXKGOJy0wtgMChaLBovJ0NbSKm6i716iUUdqOrZ8/edit?usp=sharing
+our trello: https://trello.com/invite/b/gXxRabxD/ATTI3f7dc249a7fa86717d0c67dd07c9a98b742869B2/project-management
+
 
 </div>
 
