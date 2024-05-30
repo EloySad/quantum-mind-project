@@ -3,12 +3,6 @@
     "development"
   ],
   "hints": {
-    "axe/keyboard": [
-      "default",
-      {
-        "nested-interactive": "off"
-      }
-    ],
     "axe/text-alternatives": [
       "default",
       {
@@ -21,14 +15,12 @@
         "link-name": "off"
       }
     ],
-    "no-inline-styles": "off",
-    "compat-api/css": [
+    "axe/keyboard": [
       "default",
       {
-        "ignore": [
-          "-webkit-overflow-scrolling"
-        ]
+        "nested-interactive": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }
