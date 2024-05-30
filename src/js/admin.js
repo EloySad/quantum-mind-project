@@ -1,3 +1,11 @@
+(function () {
+    const userSesion = localStorage.getItem("userSesion")
+
+    if (userSesion === null) {
+        window.location.href = "../views/games.html"
+    }
+})()
+
 import '../scss/styles.scss'
 import '../scss/auth.scss'
 import * as bootstrap from 'bootstrap'
@@ -9,6 +17,13 @@ const userName = document.querySelector("#name")
 const lastName = document.querySelector("#last-name")
 const email = document.querySelector("#email")
 let idCache
+const btnLogout = document.getElementById("btn-logout")
+//evenlisned boton logout
+
+btnLogout.addEventListener("click", () => {
+    localStorage.removeItem("userSesion")
+    window.location.href = "/"
+})
 
 index()
 
