@@ -10,19 +10,26 @@
 </head>
 
 <body class="bg-dark">
-    <header>
-        <a href="../views/games.html" class="enlace1"><img src="../../public/img/QM-LOGO-Photoroom (1).png" class="logo"/></a>
-      <nav class="barranavegacion">
-      </nav>
-      <nav>
-        <ul class="lista2">
-          
-          <li>
-            <button class="cssbuttons-iou"><a href="../auth/register.html"><span>Sign up</span
-            ></a></button>
-          </li>
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="../../public/img/android-chrome-512x512.png" class="logo" />
+            </a>
+        </div>
+        <!-- nav bar! -->
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 lista ">
+            <li>
+                <button><a href="#" class="btn btn-outline-light new-button2" id="botonhome">Home</a>
+            </li></button>
         </ul>
-      </nav>
+        <!-- loging and register -->
+
+        <div class="col-md-3 text-end botoneslanding3">
+            <button type="button" class="btn btn-primary new-button2" id="btn-logout">Logout</button>
+        </div>
+
     </header>
     <main class="container my-3 mt-5">
         <video autoplay muted loop id="bg-reg" src="../../public/vid/landing.mp4">
@@ -76,7 +83,13 @@
 
     </main>
     <footer>
+         <!-- Footer o pie de página -->
 
+         <div class="mb-3 footerpart1">
+            <form id="newsletterForm">
+              <h3>QUANTUM MIND - ADMIN VIEW</h3>
+          </form>
+          </div>  
     </footer>
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/admin.js"></script>
