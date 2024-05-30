@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Quantum Mind</title>
+</head>
+
+<body class="bg-dark">
+
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="../../public/img/android-chrome-512x512.png" class="logo" />
+            </a>
+        </div>
+        <!-- nav bar! -->
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 lista ">
+            <li>
+                <button><a href="#" class="btn btn-outline-light new-button2" id="botonhome">Home</a>
+            </li></button>
+
+        </ul>
+        <!-- loging and register -->
+
+        <div class="col-md-3 text-end botoneslanding3">
+            <button type="button" class="btn btn-primary new-button2" id="btn-logout">Logout</button>
+        </div>
+
+    </header>
+    <main class="container my-3 mt-5">
+        <video autoplay muted loop id="bg-reg" src="../../public/vid/landing.mp4">
+        </video>
+        <section>
+            <main class="container my-3 d-flex flex-column">
+                <form action="./index.html" id="form" method="post" class="next-validation mt-5" novalidate>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name(s)" required>
+                        <label for="name">Name(s)</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="last-name" name="last-name"
+                            placeholder="Last name(s)" required>
+                        <label for="last-name">Last Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" id="btn-save" class="btn btn-outline-warning">Save</button>
+                        <button type="reset" id="btn-cancel" class="btn btn-outline-info">Cancel</button>
+                        <!--me limpia los campos de un formulario-->
+                    </div>
+
+                </form>
+
+                <table
+                    class="table table-striped table-hover table-bordered border-primary align-middle text-center text-capitalize mt-4">
+                    <caption class="caption-top text-light bg-dark">List of users</caption>
+                    <thead></thead>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Options</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-devider">
+                    </tbody>
+                </table>
+            </main>
+        </section>
+
+    </main>
+    <footer>
+         <!-- Footer o pie de página -->
+
+         <div class="mb-3 footerpart1">
+            <form id="newsletterForm">
+              <h3>QUANTUM MIND - ADMIN VIEW</h3>
+          </form>
+          </div>  
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/admin.js"></script>
+
+</body>
+
+</html>

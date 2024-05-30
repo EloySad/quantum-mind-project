@@ -1,3 +1,25 @@
 {
-    "user" : []
+  "users": [
+    {
+      "id": "ba2e",
+      "userName": "Renesme",
+      "lastName": "Collen",
+      "email": "nesme@gmail.com",
+      "password": "123456"
+    },
+    {
+      "userName": "simon",
+      "lastName": "Suarez",
+      "email": "david@gmail.com",
+      "id": "ab46"
+    },
+    {
+      "id": "53a8",
+      "userName": "pepelas",
+      "lastName": "lasas",
+      "email": "gg@gmail",
+      "password": "coco"
+
+    }
+  ]
 }
